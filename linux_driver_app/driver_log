@@ -1,0 +1,146 @@
+Cleaning Ethernet Driver
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma'
+rm -rf *.o *.ko *.mod.* .c* .t* .xdma* 
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0'
+rm -rf *.o *.ko *.mod.* .c* .t* .*.cmd 
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1'
+rm -rf *.o *.ko *.mod.* .c* .t* .*.cmd 
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2'
+rm -rf *.o *.ko *.mod.* .c* .t* .*.cmd 
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3'
+rm -rf *.o *.ko *.mod.* .c* .t* .*.cmd 
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3'
+***** Driver Cleaned *****
+Compiling Ethernet Driver
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma'
+make  -C /lib/modules/3.6.11-4.fc16.i686.PAE/build SUBDIRS=/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma 
+make[2]: Entering directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+  LD      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/built-in.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.o
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.c: In function ‘PktHandler’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.c:1091:6: warning: passing argument 1 of ‘PageReserved’ from incompatible pointer type [enabled by default]
+include/linux/page-flags.h:209:1: note: expected ‘const struct page *’ but argument is of type ‘unsigned char *’
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.c:1093:7: warning: passing argument 1 of ‘SetPageDirty’ from incompatible pointer type [enabled by default]
+include/linux/page-flags.h:201:1: note: expected ‘struct page *’ but argument is of type ‘unsigned char *’
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.c: In function ‘ReadPCIState’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.c:2750:12: warning: unused variable ‘linkUpCap’ [-Wunused-variable]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_base.c:2750:6: warning: unused variable ‘reg’ [-Wunused-variable]
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_bdring.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_user.o
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_v7.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_v7.mod.o
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma/xdma_v7.ko
+make[2]: Leaving directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xdma'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0'
+make  -C /lib/modules/3.6.11-4.fc16.i686.PAE/build SUBDIRS=/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0 
+make[2]: Entering directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+  LD      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/built-in.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xbasic_types.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgethernet.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgethernet_control.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xgadapter.o
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xgadapter.c: In function ‘xenet_change_mtu’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xgadapter.c:849:13: warning: unused variable ‘SetMtu’ [-Wunused-variable]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xgadapter.c: In function ‘xtenet_init_bottom’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xgadapter.c:1678:7: warning: "USE_NW_PATH1" is not defined [-Wundef]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xgadapter.c:1680:7: warning: "USE_NW_PATH2" is not defined [-Wundef]
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "DmaMac_ReadReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko] undefined!
+WARNING: "DmaUnregister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko] undefined!
+WARNING: "DmaSendPkt" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko] undefined!
+WARNING: "Dma_get_ringparam" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko] undefined!
+WARNING: "DmaMac_WriteReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko] undefined!
+WARNING: "DmaRegister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko] undefined!
+  CC      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.mod.o
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0/xxgbeth0.ko
+make[2]: Leaving directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth0'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1'
+make  -C /lib/modules/3.6.11-4.fc16.i686.PAE/build SUBDIRS=/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1 
+make[2]: Entering directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+  LD      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/built-in.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xbasic_types.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgethernet.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgethernet_control.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xgadapter.o
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xgadapter.c: In function ‘xenet_change_mtu’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xgadapter.c:843:13: warning: unused variable ‘SetMtu’ [-Wunused-variable]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xgadapter.c: In function ‘xtenet_init_bottom’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xgadapter.c:1656:7: warning: "USE_NW_PATH2" is not defined [-Wundef]
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "DmaMac_ReadReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko] undefined!
+WARNING: "DmaUnregister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko] undefined!
+WARNING: "DmaSendPkt" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko] undefined!
+WARNING: "Dma_get_ringparam" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko] undefined!
+WARNING: "DmaMac_WriteReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko] undefined!
+WARNING: "DmaRegister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko] undefined!
+  CC      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.mod.o
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko
+make[2]: Leaving directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2'
+make  -C /lib/modules/3.6.11-4.fc16.i686.PAE/build SUBDIRS=/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2 
+make[2]: Entering directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+  LD      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/built-in.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xbasic_types.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgethernet.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgethernet_control.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xgadapter.o
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xgadapter.c: In function ‘xenet_change_mtu’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xgadapter.c:843:13: warning: unused variable ‘SetMtu’ [-Wunused-variable]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xgadapter.c: In function ‘xtenet_init_bottom’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xgadapter.c:1654:7: warning: "USE_NW_PATH1" is not defined [-Wundef]
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "DmaMac_ReadReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko] undefined!
+WARNING: "DmaUnregister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko] undefined!
+WARNING: "DmaSendPkt" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko] undefined!
+WARNING: "Dma_get_ringparam" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko] undefined!
+WARNING: "DmaMac_WriteReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko] undefined!
+WARNING: "DmaRegister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko] undefined!
+  CC      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.mod.o
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2/xxgbeth2.ko
+make[2]: Leaving directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth2'
+make[1]: Entering directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3'
+make  -C /lib/modules/3.6.11-4.fc16.i686.PAE/build SUBDIRS=/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3 
+make[2]: Entering directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+  LD      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/built-in.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xbasic_types.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgethernet.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgethernet_control.o
+  CC [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xgadapter.o
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xgadapter.c: In function ‘xenet_change_mtu’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xgadapter.c:843:13: warning: unused variable ‘SetMtu’ [-Wunused-variable]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xgadapter.c: In function ‘xtenet_init_bottom’:
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xgadapter.c:1654:7: warning: "USE_NW_PATH1" is not defined [-Wundef]
+/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xgadapter.c:1656:7: warning: "USE_NW_PATH2" is not defined [-Wundef]
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+WARNING: "DmaMac_ReadReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko] undefined!
+WARNING: "DmaUnregister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko] undefined!
+WARNING: "DmaSendPkt" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko] undefined!
+WARNING: "Dma_get_ringparam" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko] undefined!
+WARNING: "DmaMac_WriteReg" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko] undefined!
+WARNING: "DmaRegister" [/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko] undefined!
+  CC      /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.mod.o
+  LD [M]  /home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3/xxgbeth3.ko
+make[2]: Leaving directory `/usr/src/kernels/3.6.11-4.fc16.i686.PAE'
+make[1]: Leaving directory `/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth3'
+***** Driver Compiled *****
+Inserting Ethernet Driver
+insmod: error inserting '/home/hehe/v7_xt_conn_trd_baowenbang_v1.0/linux_driver_app/driver/xxgbeth1/xxgbeth1.ko': -1 Operation not permitted
